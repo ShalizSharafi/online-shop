@@ -70,6 +70,7 @@ header {
   left: 0;
   top: 0;
   z-index: 20;
+  background-color: white;
   > * {
     /* border: 1px solid black; */
     height: 100%;
@@ -180,4 +181,223 @@ header {
       }
     }
   }
+}
+/* <!-- section one ////////////////////////////////////////////////////////////////////// --> */
+
+.section-1 {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 60px 10px 60px;
+  > div {
+    width: 100%;
+    height: 110vh;
+    background-image: url(../images/home_slider_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    > .row {
+      border: 1px solid white;
+      padding-right: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 220px 50% 20px 70px;
+      height: 100%;
+      > * {
+        /* border: 1px solid white; */
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      > h1 {
+        font-family: poppins-semi-bold;
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+      > p {
+        font-family: poppins-light;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 2;
+        margin-bottom: 30px;
+      }
+      > a {
+        text-transform: capitalize;
+        font-size: 17px;
+        font-weight: 900;
+        font-family: poppins-semi-bold;
+        border: 2px solid white;
+        width: fit-content;
+        padding: 15px 50px;
+        margin-bottom: 120px;
+        transition: 0.4s;
+        &:hover {
+          color: var(--dark);
+          background-color: white;
+        }
+      }
+      > span {
+        font-family: poppins-semi-bold;
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* section two ////////////////////////////////////////////////////////////////////// */
+
+.section-2 {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 60px;
+  > .row {
+    justify-content: space-between;
+    > * {
+      height: 500px;
+    }
+    > figure {
+      width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      transition: 1s;
+      &:hover{
+        transform: scale(.98) translateY(-10px);
+      }
+      &:nth-of-type(1){
+        background-image: url(../images/avds_small.jpg);
+        padding: 30px;
+        >div{
+          border: 2px solid white;
+          width: 100%;
+          height: 100%;
+          padding: 40px;
+          position: relative;
+          >h3{
+            font-family: poppins-semi-bold;
+            color: white;
+            font-size: 45px;
+            text-transform: capitalize;
+            /* border: 1px solid red; */
+            width: 60%;
+            margin-bottom: 10px;
+          }
+          >a{
+            color: white;
+            font-family: poppins-light;
+            text-transform: capitalize;
+            font-size: 14px;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+              color: black;
+            }
+          }
+          >div{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -20px 5px 70px var(--dark);
+            &::before{
+              position: absolute;
+              content: '';
+              width: 70px;
+              height: 70px;
+              background-color: white;
+              top: -30px;
+              right: 10px;
+              display: flex;
+              border-radius: 50%;
+            }
+            >span{
+              font-size: 20px;
+              color: black;
+              font-family: poppins-semi-bold;
+              font-weight: 700;
+              text-transform: capitalize;
+              >sub{
+                font-size: 18px;
+                font-weight: 900;
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        width: calc(100% - 530px);
+        padding: 40px 30px;
+        background-image: url(../images/avds_large.jpg);
+        justify-content: left;
+        >div{
+          height: 100%;
+          width: 80%;
+          /* border: 1px solid red; */
+          display: flex;
+          flex-wrap: wrap;
+          background-color: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(5px);
+          align-content: start;
+          padding: 20px 100px 20px 20px;
+          >*{
+            /* border: 1px solid white; */
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+          }
+          >h3{
+            font-family: poppins-semi-bold;
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: capitalize;
+          }
+          >p{
+            font-family: poppins-regular;
+            font-size: 13px;
+            line-height: 3;
+            margin-bottom: 40px;
+          }
+          >a{
+            font-family: poppins-regular;
+            font-size: 14px;
+            text-transform: capitalize;
+            text-decoration-line: underline;
+            transition: .4s;
+            &:hover{
+              color: var(--danger);
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}
+
+/* section three  // ///////////////////// ///////////////////// ////////////////////*/
+.section-3{
+width: 100%;
+min-height: 100px;
+padding: 40px 150px;
+background-color: black;
+>.row{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
 }
